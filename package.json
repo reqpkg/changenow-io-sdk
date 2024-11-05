@@ -1,7 +1,7 @@
 {
   "name": "changenow-io-sdk",
-  "version": "1.0.0",
-  "description": "👛 changenow.io (crypto exchange) SDK",
+  "version": "1.0.1",
+  "description": "🪙 changenow.io (crypto exchange) SDK",
   "type": "module",
   "exports": {
     ".": {
