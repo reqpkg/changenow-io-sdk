@@ -15,7 +15,7 @@ npm i changenow-io-sdk
 ```js
 import { createChangeNowSDK } from 'changenow-io-sdk'
 
-const changeNow = createChangeNowSDK('[API_KEY]')
+const changeNowSDK = createChangeNowSDK('[API_KEY]')
 ```
 
 ### Execute
