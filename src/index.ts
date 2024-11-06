@@ -7,8 +7,9 @@ import { ChangeNowClient } from './client'
 export function createChangeNowSDK(changeNowApiKey: string) {
   const changeNowClient = new ChangeNowClient({
     baseApiParams: {
+      format: 'json',
       headers: {
-        'x-changenow-api-key': changeNowApiKey,
+        'X-Changenow-Api-Key': changeNowApiKey,
       },
     },
   })
