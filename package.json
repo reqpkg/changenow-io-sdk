@@ -17,7 +17,9 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "generate-client": "swagger-typescript-api -p ./src/schema.yaml -o ./src -n client.ts --api-class-name ChangeNowClient --unwrap-response-data"
+    "generate-client": "swagger-typescript-api -p ./src/schema.yaml -o ./src -n client.ts --api-class-name ChangeNowClient --unwrap-response-data",
+    "check-updates": "node check-updates.cjs",
+    "update-check": "npm run check-updates"
   },
   "author": {
     "name": "strikebu77",
