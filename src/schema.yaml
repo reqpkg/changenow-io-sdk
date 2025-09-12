@@ -213,18 +213,18 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: (Optional) Set true to return only active currencies
         - name: fixedRate
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: >-
             (Optional) Set true to return only  for the currencies  available on
             a fixed-rate flow
       responses:
-        '200':
+        "200":
           description: >-
             Successful response (active currencies) / Successful response /
             Successful response (supports fixed rate)
@@ -240,7 +240,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -3267,7 +3267,7 @@ paths:
                       image: https://changenow.io/images/coins/lmc.svg
                       isFiat: false
                       isStable: false
-                      name: 'LoMoCoin '
+                      name: "LoMoCoin "
                       supportsFixedRate: false
                       ticker: lmc
                     - featured: false
@@ -4905,12 +4905,12 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: >-
             (Optional) Set true to return only for the currencies available on a
             fixed-rate flow
       responses:
-        '200':
+        "200":
           description: Successful response / Successful response (supports Fixed Rate)
           headers:
             Access-Control-Allow-Headers:
@@ -4924,7 +4924,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -6708,7 +6708,7 @@ paths:
                     isAvailable: false
                     isFiat: false
                     isStable: false
-                    name: 'LoMoCoin '
+                    name: "LoMoCoin "
                     supportsFixedRate: false
                     ticker: lmc
                   - featured: false
@@ -8448,7 +8448,7 @@ paths:
                       isAvailable: false
                       isFiat: false
                       isStable: false
-                      name: 'LoMoCoin '
+                      name: "LoMoCoin "
                       supportsFixedRate: false
                       ticker: lmc
                     - featured: false
@@ -8660,7 +8660,7 @@ paths:
                       name: FunFair
                       supportsFixedRate: true
                       ticker: fun
-        '404':
+        "404":
           description: Bad request (invalid ticker)
           headers:
             Access-Control-Allow-Headers:
@@ -8674,7 +8674,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -8756,7 +8756,7 @@ paths:
       description: "This method returns the name of the coin, the coin's main features (such as anonymity, the need for Extra ID, and logo), and the coin's supported wallets.\n\n<h3>Successful response:</h3>\n\t<p>The response contains an object with currency information.</p>\n\n<h5>Successful response fields</h5>\n\n<table>\n\t<tr>\n        <td><b>Name</b></td>\n        <td><b>Type</b></td>\n        <td><b>Description</b></td>\n    </tr>\n    <tr>\n        <td><b><i>ticker</i></b></td>\n        <td><i>String</i></td>\n        <td>Currency ticker</td>\n    </tr>\n    <tr>\n        <td><b><i>name</i></b></td>\n        <td><i>String</i></td>\n        <td>Currency name</td>\n    </tr>\n    <tr>\n        <td><b><i>image</i></b></td>\n        <td><i>String</i></td>\n        <td>Currency logo url</td>\n    </tr>\n    <tr>\n        <td><b><i>warnings</i></b></td>\n        <td><i>String</i></td>\n        <td>Some warnings like warnings that transactions on this network take longer or that the currency has moved to another network. Field “from” for warnings in case of exchange of this currency and field “to” for warnings in case of exchange for this currency, respectively</td>\n    </tr>\n    <tr>\n        <td><b><i>hasExternalId</i></b></td>\n        <td><i>Boolean</i></td>\n        <td>Indicates if a currency has an Extra ID</td>\n    </tr>\n    <tr>\n        <td><b><i>isFiat</i></b></td>\n        <td><i>Boolean</i></td>\n        <td>Indicates if a currency is a fiat currency (EUR, USD)</td>\n    </tr>\n    <tr>\n        <td><b><i>isAnonymous</i></b></td>\n        <td><i>Boolean</i></td>\n        <td>Indicates if a currency has the ability to hide their transactions. This means that even if you know someone’s address, you won’t be able to recognize the balance and receive information about transactions without additional information (e.g. XMR)</td>\n    </tr>\n    <tr>\n        <td><b><i>wallets</i></b></td>\n        <td><i>Object</i></td>\n        <td>This field contains a list of primary and secondary wallets. For each wallet, this endpoint returns the name, url, logo url, supported platforms, degree of anonymity, degree of security, application weight and indicates if the wallet supports different currencies</td>\n    </tr>\n    <tr>\n        <td><b><i>addressExplorerMask</i></b></td>\n        <td><i>String</i></td>\n        <td>This field helps to create a link for the wallet address. Wallet address url = this field.replace('$$', payinAddress or payoutAddress from the <a href=\"#fa12244b-f879-4675-a6f7-553cc59435dc\">Transaction status API endpoint</a>)</td>\n    </tr>\n    <tr>\n        <td><b><i>transactionExplorerMask</i></b></td>\n        <td><i>String</i></td>\n        <td>This field helps to create a link for the transaction hash. Transaction hash url = this field.replace('$$', payinHash or payoutHash from the <a href=\"#fa12244b-f879-4675-a6f7-553cc59435dc\">Transaction status API endpoint</a>) </td>\n    </tr>\n</table>\n\n<p>You can find <b>examples of errors</b> in the Example request block (use the drop-down list).</p>\n\n<h3>Request Parameters:</h3>"
       operationId: currencyInfo
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -8770,7 +8770,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -8903,7 +8903,7 @@ paths:
                                   example: High
                                 weight:
                                   type: string
-                                  example: ''
+                                  example: ""
                             url:
                               type: string
                               example: https://guarda.co/
@@ -8923,7 +8923,7 @@ paths:
                             properties:
                               anonymity: High
                               security: High
-                              weight: ''
+                              weight: ""
                             url: https://guarda.co/
                       secondary:
                         type: array
@@ -8975,7 +8975,7 @@ paths:
                                   example: Medium
                                 weight:
                                   type: string
-                                  example: ''
+                                  example: ""
                             url:
                               type: string
                               example: https://jaxx.io/
@@ -8994,7 +8994,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://jaxx.io/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/tet9_ylzVbt6HfXH.svg
@@ -9010,7 +9010,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://electrum.org/#home
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/As3dajXLL4luF7b1.svg
@@ -9026,7 +9026,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: >-
                               https://play.google.com/store/apps/details?id=de.schildbach.wallet
                           - imageUrl: >-
@@ -9043,7 +9043,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://www.exodus.io/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/4zc5TQsOF3oxfZBg.png
@@ -9091,7 +9091,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://strongcoin.com
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/JOlcngQWuOIpEcje.png
@@ -9107,7 +9107,7 @@ paths:
                             properties:
                               anonymity: Low
                               security: Low
-                              weight: ''
+                              weight: ""
                             url: https://www.coinbase.com/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/X3MTjfT_Lb8hbEl6.png
@@ -9123,7 +9123,7 @@ paths:
                             properties:
                               anonymity: Low
                               security: Low
-                              weight: ''
+                              weight: ""
                             url: https://www.mobi.me/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/x3pwL4YMy9p54Y0_.svg
@@ -9139,7 +9139,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://www.melis.io/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/36LQevZK4OR_v-mB.png
@@ -9155,7 +9155,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://bitpay.com/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/jheyBRBINM-IWAJj.png
@@ -9172,7 +9172,7 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://atomicwallet.io/
                           - imageUrl: >-
                               https://changenow.io/uploads/wallets/IrH0nxrkr6YZOtAP.png
@@ -9189,17 +9189,17 @@ paths:
                             properties:
                               anonymity: Medium
                               security: Medium
-                              weight: ''
+                              weight: ""
                             url: https://wallet.bitcoin.com/
                   warnings:
                     type: object
                     properties:
                       from:
                         type: string
-                        example: ''
+                        example: ""
                       to:
                         type: string
-                        example: ''
+                        example: ""
               examples:
                 Successful response:
                   value:
@@ -9228,7 +9228,7 @@ paths:
                           properties:
                             anonymity: High
                             security: High
-                            weight: ''
+                            weight: ""
                           url: https://guarda.co/
                       secondary:
                         - imageUrl: >-
@@ -9245,7 +9245,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://jaxx.io/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/tet9_ylzVbt6HfXH.svg
@@ -9261,7 +9261,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://electrum.org/#home
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/As3dajXLL4luF7b1.svg
@@ -9277,7 +9277,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: >-
                             https://play.google.com/store/apps/details?id=de.schildbach.wallet
                         - imageUrl: >-
@@ -9294,7 +9294,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://www.exodus.io/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/4zc5TQsOF3oxfZBg.png
@@ -9342,7 +9342,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://strongcoin.com
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/JOlcngQWuOIpEcje.png
@@ -9358,7 +9358,7 @@ paths:
                           properties:
                             anonymity: Low
                             security: Low
-                            weight: ''
+                            weight: ""
                           url: https://www.coinbase.com/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/X3MTjfT_Lb8hbEl6.png
@@ -9374,7 +9374,7 @@ paths:
                           properties:
                             anonymity: Low
                             security: Low
-                            weight: ''
+                            weight: ""
                           url: https://www.mobi.me/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/x3pwL4YMy9p54Y0_.svg
@@ -9390,7 +9390,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://www.melis.io/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/36LQevZK4OR_v-mB.png
@@ -9406,7 +9406,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://bitpay.com/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/jheyBRBINM-IWAJj.png
@@ -9423,7 +9423,7 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://atomicwallet.io/
                         - imageUrl: >-
                             https://changenow.io/uploads/wallets/IrH0nxrkr6YZOtAP.png
@@ -9440,12 +9440,12 @@ paths:
                           properties:
                             anonymity: Medium
                             security: Medium
-                            weight: ''
+                            weight: ""
                           url: https://wallet.bitcoin.com/
                     warnings:
-                      from: ''
-                      to: ''
-        '404':
+                      from: ""
+                      to: ""
+        "404":
           description: Bad request (invalid ticker)
           headers:
             Access-Control-Allow-Headers:
@@ -9459,7 +9459,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -9530,7 +9530,7 @@ paths:
         required: true
         schema:
           type: string
-          example: ''
+          example: ""
         description: (Required) Currency ticker
   /v1/transactions/{api_key}:
     get:
@@ -9724,7 +9724,7 @@ paths:
           in: query
           schema:
             type: string
-            example: '50'
+            example: "50"
           description: |-
             (Optional) Limit of transactions to return (default: 10)
 
@@ -9733,7 +9733,7 @@ paths:
           in: query
           schema:
             type: string
-            example: '0'
+            example: "0"
           description: |-
             (Optional) Number of transactions to skip (default: 0)
 
@@ -9742,7 +9742,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Set a date to filter transactions created after this
             specified date.
@@ -9753,7 +9753,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Set a date to filter transactions created before this
             specified date.
@@ -9761,7 +9761,7 @@ paths:
 
             Format: YYYY-MM-DDTHH:mm:ss.sssZ
       responses:
-        '200':
+        "200":
           description: >-
             Successful response with filters / Successful response / Successful
             response with all filters
@@ -9777,7 +9777,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -9789,7 +9789,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '2'
+                example: "2"
             Date:
               schema:
                 type: string
@@ -9848,7 +9848,7 @@ paths:
                       example: 3NPcAGmzggbPn6BpARxyauHYC6oLBaiStN
                     payoutAddress:
                       type: string
-                      example: '0xdddddddddddddddddddddddddddddddddddddddd'
+                      example: "0xdddddddddddddddddddddddddddddddddddddddd"
                     status:
                       type: string
                       example: waiting
@@ -9857,17 +9857,17 @@ paths:
                       example: eth
                     updatedAt:
                       type: string
-                      example: '2019-08-22T17:34:06.124Z'
+                      example: "2019-08-22T17:34:06.124Z"
                 example:
                   - expectedReceiveAmount: 51.1593658
                     expectedSendAmount: 1
                     fromCurrency: btc
                     id: 5d80d184a53a73
                     payinAddress: 3NPcAGmzggbPn6BpARxyauHYC6oLBaiStN
-                    payoutAddress: '0xdddddddddddddddddddddddddddddddddddddddd'
+                    payoutAddress: "0xdddddddddddddddddddddddddddddddddddddddd"
                     status: waiting
                     toCurrency: eth
-                    updatedAt: '2019-08-22T17:34:06.124Z'
+                    updatedAt: "2019-08-22T17:34:06.124Z"
               examples:
                 Successful response:
                   value:
@@ -9876,15 +9876,15 @@ paths:
                       fromCurrency: btc
                       id: 5d80d184a53a73
                       payinAddress: 3NPcAGmzggbPn6BpARxyauHYC6oLBaiStN
-                      payoutAddress: '0xdddddddddddddddddddddddddddddddddddddddd'
+                      payoutAddress: "0xdddddddddddddddddddddddddddddddddddddddd"
                       status: waiting
                       toCurrency: eth
-                      updatedAt: '2019-08-22T17:34:06.124Z'
+                      updatedAt: "2019-08-22T17:34:06.124Z"
                     - amountReceive: 0.522608
                       amountSend: 2.422305
                       fromCurrency: dgd
                       id: 83c63c8f167307
-                      payinAddress: '0x81c47d79018d62158F5284d379aB094E376f0b14'
+                      payinAddress: "0x81c47d79018d62158F5284d379aB094E376f0b14"
                       payinHash: >-
                         0xdff1f5a6ef4dc9591abbc42cb8e2013b38b1c8664b140245aea46fbc8bd4a87f
                       payoutAddress: >-
@@ -9893,16 +9893,16 @@ paths:
                         b6e54b414e1f9a77058ed6f4aa4b6a8621336a99cfdcb675743c10373c2c952c
                       status: finished
                       toCurrency: xmr
-                      updatedAt: '2019-08-26T11:35:59.842Z'
+                      updatedAt: "2019-08-26T11:35:59.842Z"
                     - expectedReceiveAmount: 0.2082564
                       expectedSendAmount: 2267.652024
                       fromCurrency: trx
                       id: 5b02a5d0651812
                       payinAddress: TGfT5vFvHKLUThsFrUKQuCrhxMEJc6x31C
-                      payoutAddress: '0x832E32F4e731486a2187daC82C3c7170858F4986'
+                      payoutAddress: "0x832E32F4e731486a2187daC82C3c7170858F4986"
                       status: waiting
                       toCurrency: eth
-                      updatedAt: '2019-08-26T11:39:32.176Z'
+                      updatedAt: "2019-08-26T11:39:32.176Z"
                 Successful response with all filters:
                   value:
                     - expectedReceiveAmount: 51.1593658
@@ -9910,10 +9910,10 @@ paths:
                       fromCurrency: btc
                       id: 5d80d184a53a73
                       payinAddress: 3NPcAGmzggbPn6BpARxyauHYC6oLBaiStN
-                      payoutAddress: '0xdddddddddddddddddddddddddddddddddddddddd'
+                      payoutAddress: "0xdddddddddddddddddddddddddddddddddddddddd"
                       status: waiting
                       toCurrency: eth
-                      updatedAt: '2019-08-22T17:34:06.124Z'
+                      updatedAt: "2019-08-22T17:34:06.124Z"
                 Successful response with filters:
                   value:
                     - expectedReceiveAmount: 51.1593658
@@ -9921,10 +9921,10 @@ paths:
                       fromCurrency: btc
                       id: 5d80d184a53a73
                       payinAddress: 3NPcAGmzggbPn6BpARxyauHYC6oLBaiStN
-                      payoutAddress: '0xdddddddddddddddddddddddddddddddddddddddd'
+                      payoutAddress: "0xdddddddddddddddddddddddddddddddddddddddd"
                       status: waiting
                       toCurrency: eth
-                      updatedAt: '2019-08-22T17:34:06.124Z'
+                      updatedAt: "2019-08-22T17:34:06.124Z"
       security:
         - {}
     post:
@@ -10065,13 +10065,13 @@ paths:
                   example: r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV
                 amount:
                   type: string
-                  example: '1.34567'
+                  example: "1.34567"
                 contactEmail:
                   type: string
                   example: example@example.com
                 extraId:
                   type: string
-                  example: '123456789'
+                  example: "123456789"
                 from:
                   type: string
                   example: btc
@@ -10080,27 +10080,27 @@ paths:
                   example: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
                 refundExtraId:
                   type: string
-                  example: ''
+                  example: ""
                 to:
                   type: string
                   example: xrp
                 userId:
                   type: string
-                  example: ''
+                  example: ""
             examples:
               Create exchange transaction:
                 value:
                   address: r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV
-                  amount: '1.34567'
+                  amount: "1.34567"
                   contactEmail: example@example.com
-                  extraId: '123456789'
+                  extraId: "123456789"
                   from: btc
                   refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                  refundExtraId: ''
+                  refundExtraId: ""
                   to: xrp
-                  userId: ''
+                  userId: ""
       responses:
-        '200':
+        "200":
           description: Successful response / Successful response (all parameters are used)
           headers:
             Access-Control-Allow-Headers:
@@ -10114,7 +10114,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10184,19 +10184,19 @@ paths:
                     example: 328E95juhLbXeDDVDR9thh58MtCsnKuvf6
                   payoutAddress:
                     type: string
-                    example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   payoutExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   payoutExtraIdName:
                     type: string
                     example: Destination tag
                   refundAddress:
                     type: string
-                    example: ''
+                    example: ""
                   refundExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   toCurrency:
                     type: string
                     example: eth
@@ -10207,10 +10207,10 @@ paths:
                     fromCurrency: btc
                     id: 33d9b8e1867579
                     payinAddress: 328E95juhLbXeDDVDR9thh58MtCsnKuvf6
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
-                    payoutExtraId: ''
-                    refundAddress: ''
-                    refundExtraId: ''
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
+                    payoutExtraId: ""
+                    refundAddress: ""
+                    refundExtraId: ""
                     toCurrency: eth
                 Successful response (all parameters are used):
                   value:
@@ -10219,12 +10219,12 @@ paths:
                     id: b89e07c37c5726
                     payinAddress: 3Dg9o1mB9obJip6GfTM56umDegwxzwGQi5
                     payoutAddress: r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV
-                    payoutExtraId: '123456789'
+                    payoutExtraId: "123456789"
                     payoutExtraIdName: Destination tag
                     refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                    refundExtraId: ''
+                    refundExtraId: ""
                     toCurrency: xrp
-        '400':
+        "400":
           description: >-
             Bad request (amount is less then minimal) / Bad request (not valid
             address)
@@ -10240,7 +10240,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10252,7 +10252,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '106'
+                example: "106"
             Date:
               schema:
                 type: string
@@ -10297,12 +10297,12 @@ paths:
                     example: out_of_range
                   message:
                     type: string
-                    example: 'Amount is less then minimal: 0.002644 BTC'
+                    example: "Amount is less then minimal: 0.002644 BTC"
               examples:
                 Bad request (amount is less then minimal):
                   value:
                     error: out_of_range
-                    message: 'Amount is less then minimal: 0.002644 BTC'
+                    message: "Amount is less then minimal: 0.002644 BTC"
                 Bad request (not valid address):
                   value:
                     error: not_valid_address
@@ -10421,7 +10421,7 @@ paths:
         <h3>Request Parameters:</h3>
       operationId: transactionStatus
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -10435,7 +10435,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10493,7 +10493,7 @@ paths:
                 properties:
                   createdAt:
                     type: string
-                    example: '2019-08-22T14:47:49.943Z'
+                    example: "2019-08-22T14:47:49.943Z"
                   expectedReceiveAmount:
                     type: number
                     example: 52.31667
@@ -10514,7 +10514,7 @@ paths:
                     example: 32Ge2ci26rj1sRGw2NjiQa9L7Xvxtgzhrj
                   payoutAddress:
                     type: string
-                    example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   status:
                     type: string
                     example: waiting
@@ -10523,23 +10523,23 @@ paths:
                     example: eth
                   updatedAt:
                     type: string
-                    example: '2019-08-22T14:47:49.943Z'
+                    example: "2019-08-22T14:47:49.943Z"
               examples:
                 Successful response:
                   value:
-                    createdAt: '2019-08-22T14:47:49.943Z'
+                    createdAt: "2019-08-22T14:47:49.943Z"
                     expectedReceiveAmount: 52.31667
                     expectedSendAmount: 1
                     fromCurrency: btc
                     id: 50727663e5d9a4
                     isPartner: false
                     payinAddress: 32Ge2ci26rj1sRGw2NjiQa9L7Xvxtgzhrj
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                     status: waiting
                     toCurrency: eth
-                    updatedAt: '2019-08-22T14:47:49.943Z'
-        '400':
-          description: ' Bad request (user not found)'
+                    updatedAt: "2019-08-22T14:47:49.943Z"
+        "400":
+          description: " Bad request (user not found)"
           headers:
             Access-Control-Allow-Headers:
               schema:
@@ -10552,7 +10552,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10564,7 +10564,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '62'
+                example: "62"
             Date:
               schema:
                 type: string
@@ -10611,7 +10611,7 @@ paths:
                     type: string
                     example: Can’t identify a user
               examples:
-                ' Bad request (user not found)':
+                " Bad request (user not found)":
                   value:
                     error: user_not_found
                     message: Can’t identify a user
@@ -10654,12 +10654,12 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Use this flag if you would like to get an estimate for
             the balance import (without withdrawal fee)
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -10673,7 +10673,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10751,7 +10751,7 @@ paths:
                     estimatedAmount: 58.4142873
                     transactionSpeedForecast: 10-60
                     warningMessage: null
-        '400':
+        "400":
           description: Bad request (inactive pair)
           headers:
             Access-Control-Allow-Headers:
@@ -10765,7 +10765,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -10777,7 +10777,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '57'
+                example: "57"
             Date:
               schema:
                 type: string
@@ -10834,7 +10834,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '0.1'
+          example: "0.1"
         description: Amount of funds you want to exchange1
       - name: from_to
         in: path
@@ -10870,12 +10870,12 @@ paths:
           in: query
           schema:
             type: string
-            example: 'false'
+            example: "false"
           description: >-
             Set false to return all available pairs, except pairs supported by
             our partners
       responses:
-        '200':
+        "200":
           description: >-
             Successful response / Successful response (includes pairs supported
             by our partners)
@@ -10891,7 +10891,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -51275,7 +51275,7 @@ paths:
             type: string
             example: your_api_key
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -51289,7 +51289,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -51352,7 +51352,7 @@ paths:
                 Successful response:
                   value:
                     minAmount: 0.002645
-        '400':
+        "400":
           description: Bad request (pair is inactive)
           headers:
             Access-Control-Allow-Headers:
@@ -51366,7 +51366,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -51378,7 +51378,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '28'
+                example: "28"
             Date:
               schema:
                 type: string
@@ -51448,7 +51448,7 @@ paths:
             type: string
             example: your_api_key
       responses:
-        '200':
+        "200":
           description: Succesfull response
           content:
             application/json:
@@ -51466,7 +51466,7 @@ paths:
                   value:
                     maxAmount: null
                     minAmount: 0.0002625
-        '400':
+        "400":
           description: Bad Request (Not valid params)
           content:
             application/json:
@@ -51501,7 +51501,7 @@ paths:
       description: "This API endpoint returns the list of all the pairs available on a fixed-rate flow. Some currencies get enabled or disabled from time to time and the market info gets updates, so make sure to refresh the list occasionally. One time per minute is sufficient. \n\n<h3>Successful response:</h3>\n<p>The response contains an array of objects with currency information.</p>\n\n<h5>Successful response fields</h5>\n\n<table>\n\t<tr>\n        <td><b>Name</b></td>\n        <td><b>Type</b></td>\n        <td><b>Description</b></td>\n    </tr>\n    <tr>\n        <td><b><i>from</i></b></td>\n        <td><i>String</i></td>\n        <td>Currency ticker</td>\n    </tr>\n    <tr>\n        <td><b><i>to</i></b></td>\n        <td><i>String</i></td>\n        <td>Currency ticker</td>\n    </tr>\n    <tr>\n        <td><b><i>min</i></b></td>\n        <td><i>Number</i></td>\n        <td>Minimal limit for exchange</td>\n    </tr>\n    <tr>\n        <td><b><i>max</i></b></td>\n        <td><i>Number</i></td>\n        <td>Maximum limit for exchange</td>\n    </tr>\n    <tr>\n        <td><b><i>rate</i></b></td>\n        <td><i>Number</i></td>\n        <td>Exchange rate.\n        Formula for calculating the estimated amount is given below</td>\n    </tr>\n    <tr>\n        <td><b><i>minerFee</i></b></td>\n        <td><i>Number</i></td>\n        <td>Network fee for transferring funds between wallets, it should be deducted from the result. \t\t\t\t\t\n        Formula for calculating the estimated amount is given below</td>\n    </tr>\n</table>\n\n* <p>Formula for the estimated amount</p> \n<pre><code>estimatedAmount = (rate * amount) - networkFee</code></pre>\n\n\n<p>You can find <b>examples of errors</b> in the Example request block (use the drop-down list).</p>\n\n<h3>Request Parameters:</h3>"
       operationId: listOfAvailableFixedRateMarkets
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -51515,7 +51515,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56143,7 +56143,7 @@ paths:
                       minerFee: 0.0004
                       rate: 0.0361169
                       to: bnbmainnet
-        '400':
+        "400":
           description: Bad request (user not found)
           headers:
             Access-Control-Allow-Headers:
@@ -56157,7 +56157,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56169,7 +56169,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '26'
+                example: "26"
             Date:
               schema:
                 type: string
@@ -56280,7 +56280,7 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: >-
             (Optional) Use rateId for fixed-rate flow. If this field is true,
             you could use returned field "rateId" in next method for creating
@@ -56291,12 +56291,12 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Use this flag if you would like to get an estimate for
             the balance import (without withdrawal fee)
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -56310,7 +56310,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56380,7 +56380,7 @@ paths:
                     example: 10-60
                   validUntil:
                     type: string
-                    example: '2023-11-08T15:44:11.519Z'
+                    example: "2023-11-08T15:44:11.519Z"
                   warningMessage:
                     nullable: true
                     example: null
@@ -56391,9 +56391,9 @@ paths:
                     networkFee: 0.0005605
                     rateId: c3mDvf1JcFeMzwfRHXAYzaQbbclXXF6Y
                     transactionSpeedForecast: 10-60
-                    validUntil: '2023-11-08T15:44:11.519Z'
+                    validUntil: "2023-11-08T15:44:11.519Z"
                     warningMessage: null
-        '400':
+        "400":
           description: Bad request (amount less than minimum)
           headers:
             Access-Control-Allow-Headers:
@@ -56407,7 +56407,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56419,7 +56419,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '104'
+                example: "104"
             Date:
               schema:
                 type: string
@@ -56480,8 +56480,8 @@ paths:
         required: true
         schema:
           type: string
-          example: '0.1'
-        description: 'Amount of funds you want to exchange (example: 1.314452)'
+          example: "0.1"
+        description: "Amount of funds you want to exchange (example: 1.314452)"
       - name: from_to
         in: path
         required: true
@@ -56534,7 +56534,7 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: >-
             (Optional) Use rateId for fixed-rate flow. If this field is true,
             you could use returned field "rateId" in next method for creating
@@ -56545,12 +56545,12 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Use this flag if you would like to get an estimate for
             the balance import (without withdrawal fee)
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -56564,7 +56564,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56628,14 +56628,14 @@ paths:
                     example: c3mDvf1JcFeMzwfR1lqZDPKMo8otSEck
                   validUntil:
                     type: string
-                    example: '2023-11-08T15:44:41.912Z'
+                    example: "2023-11-08T15:44:41.912Z"
               examples:
                 Successful response:
                   value:
                     estimatedDeposit: 0.27207313
                     rateId: c3mDvf1JcFeMzwfR1lqZDPKMo8otSEck
-                    validUntil: '2023-11-08T15:44:41.912Z'
-        '400':
+                    validUntil: "2023-11-08T15:44:41.912Z"
+        "400":
           description: Bad request (amount less than minimum)
           headers:
             Access-Control-Allow-Headers:
@@ -56649,7 +56649,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -56661,7 +56661,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '104'
+                example: "104"
             Date:
               schema:
                 type: string
@@ -56734,8 +56734,8 @@ paths:
         required: true
         schema:
           type: string
-          example: '0.1'
-        description: 'Amount of funds you want to exchange (example: 1.314452)'
+          example: "0.1"
+        description: "Amount of funds you want to exchange (example: 1.314452)"
       - name: from_to
         in: path
         required: true
@@ -56761,7 +56761,7 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: >-
             (Optional) Use rateId for fixed-rate flow. If this field is true,
             you could use returned field "rateId" in next method for creating
@@ -56769,7 +56769,7 @@ paths:
             Current estimated amount would be valid until time in field
             "validUntil"
       responses:
-        '200':
+        "200":
           description: Succesfull response
           content:
             application/json:
@@ -56787,7 +56787,7 @@ paths:
                   value:
                     maxAmount: null
                     minAmount: 0.0002625
-        '400':
+        "400":
           description: Bad Request (Not valid params)
           content:
             application/json:
@@ -56962,46 +56962,46 @@ paths:
                   example: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
                 amount:
                   type: string
-                  example: '0.12345'
+                  example: "0.12345"
                 contactEmail:
                   type: string
-                  example: ''
+                  example: ""
                 extraId:
                   type: string
-                  example: '123456789'
+                  example: "123456789"
                 from:
                   type: string
                   example: btc
                 rateId:
                   type: string
-                  example: ''
+                  example: ""
                 refundAddress:
                   type: string
                   example: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
                 refundExtraId:
                   type: string
-                  example: ''
+                  example: ""
                 to:
                   type: string
                   example: xlm
                 userId:
                   type: string
-                  example: ''
+                  example: ""
             examples:
               Create fixed-rate exchange:
                 value:
                   address: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
-                  amount: '0.12345'
-                  contactEmail: ''
-                  extraId: '123456789'
+                  amount: "0.12345"
+                  contactEmail: ""
+                  extraId: "123456789"
                   from: btc
-                  rateId: ''
+                  rateId: ""
                   refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                  refundExtraId: ''
+                  refundExtraId: ""
                   to: xlm
-                  userId: ''
+                  userId: ""
       responses:
-        '200':
+        "200":
           description: Successful response / Successful response (all parameters are used)
           headers:
             Access-Control-Allow-Headers:
@@ -57015,7 +57015,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -57085,25 +57085,25 @@ paths:
                     example: 33eFX2jfeWbXMSmRe9ewUUTrmSVSxZi5cj
                   payoutAddress:
                     type: string
-                    example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   payoutExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   payoutExtraIdName:
                     type: string
                     example: Memo
                   refundAddress:
                     type: string
-                    example: ''
+                    example: ""
                   refundExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   toCurrency:
                     type: string
                     example: eth
                   validUntil:
                     type: string
-                    example: '2019-09-09T14:01:04.921Z'
+                    example: "2019-09-09T14:01:04.921Z"
               examples:
                 Successful response:
                   value:
@@ -57111,12 +57111,12 @@ paths:
                     fromCurrency: btc
                     id: a5c73e2603f40d
                     payinAddress: 33eFX2jfeWbXMSmRe9ewUUTrmSVSxZi5cj
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
-                    payoutExtraId: ''
-                    refundAddress: ''
-                    refundExtraId: ''
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
+                    payoutExtraId: ""
+                    refundAddress: ""
+                    refundExtraId: ""
                     toCurrency: eth
-                    validUntil: '2019-09-09T14:01:04.921Z'
+                    validUntil: "2019-09-09T14:01:04.921Z"
                 Successful response (all parameters are used):
                   value:
                     amount: 20695.9485729
@@ -57124,13 +57124,13 @@ paths:
                     id: aae4b687c8b466
                     payinAddress: 3GVvNwbpnz87ru6pY2daMgUrtGiX681EUn
                     payoutAddress: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
-                    payoutExtraId: '123456789'
+                    payoutExtraId: "123456789"
                     payoutExtraIdName: Memo
                     refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                    refundExtraId: ''
+                    refundExtraId: ""
                     toCurrency: xlm
-                    validUntil: '2019-09-09T14:02:52.326Z'
-        '400':
+                    validUntil: "2019-09-09T14:02:52.326Z"
+        "400":
           description: Bad request (amount greater than the maximum)
           headers:
             Access-Control-Allow-Headers:
@@ -57144,7 +57144,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -57156,7 +57156,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '104'
+                example: "104"
             Date:
               schema:
                 type: string
@@ -57364,46 +57364,46 @@ paths:
                   example: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
                 contactEmail:
                   type: string
-                  example: ''
+                  example: ""
                 extraId:
                   type: string
-                  example: '123456789'
+                  example: "123456789"
                 from:
                   type: string
                   example: btc
                 rateId:
                   type: string
-                  example: ''
+                  example: ""
                 refundAddress:
                   type: string
                   example: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
                 refundExtraId:
                   type: string
-                  example: ''
+                  example: ""
                 result:
                   type: string
-                  example: '123456789'
+                  example: "123456789"
                 to:
                   type: string
                   example: xlm
                 userId:
                   type: string
-                  example: ''
+                  example: ""
             examples:
               Create reverse fixed-rate exchange:
                 value:
                   address: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
-                  contactEmail: ''
-                  extraId: '123456789'
+                  contactEmail: ""
+                  extraId: "123456789"
                   from: btc
-                  rateId: ''
+                  rateId: ""
                   refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                  refundExtraId: ''
-                  result: '123456789'
+                  refundExtraId: ""
+                  result: "123456789"
                   to: xlm
-                  userId: ''
+                  userId: ""
       responses:
-        '200':
+        "200":
           description: Successful response / Successful response (all parameters are used)
           headers:
             Access-Control-Allow-Headers:
@@ -57417,7 +57417,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -57487,25 +57487,25 @@ paths:
                     example: 33eFX2jfeWbXMSmRe9ewUUTrmSVSxZi5cj
                   payoutAddress:
                     type: string
-                    example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   payoutExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   payoutExtraIdName:
                     type: string
                     example: Memo
                   refundAddress:
                     type: string
-                    example: ''
+                    example: ""
                   refundExtraId:
                     type: string
-                    example: ''
+                    example: ""
                   toCurrency:
                     type: string
                     example: eth
                   validUntil:
                     type: string
-                    example: '2019-09-09T14:01:04.921Z'
+                    example: "2019-09-09T14:01:04.921Z"
               examples:
                 Successful response:
                   value:
@@ -57513,12 +57513,12 @@ paths:
                     fromCurrency: btc
                     id: a5c73e2603f40d
                     payinAddress: 33eFX2jfeWbXMSmRe9ewUUTrmSVSxZi5cj
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
-                    payoutExtraId: ''
-                    refundAddress: ''
-                    refundExtraId: ''
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
+                    payoutExtraId: ""
+                    refundAddress: ""
+                    refundExtraId: ""
                     toCurrency: eth
-                    validUntil: '2019-09-09T14:01:04.921Z'
+                    validUntil: "2019-09-09T14:01:04.921Z"
                 Successful response (all parameters are used):
                   value:
                     amount: 20695.9485729
@@ -57526,13 +57526,13 @@ paths:
                     id: aae4b687c8b466
                     payinAddress: 3GVvNwbpnz87ru6pY2daMgUrtGiX681EUn
                     payoutAddress: GAM6Y7R5LKBYOC5VCF3L3B24EMM2IA5S7KTWTR65G65N7BJQRV32OGFB
-                    payoutExtraId: '123456789'
+                    payoutExtraId: "123456789"
                     payoutExtraIdName: Memo
                     refundAddress: 1Nh7uHdvY6fNwtQtM1G5EZAFPLC33B59rB
-                    refundExtraId: ''
+                    refundExtraId: ""
                     toCurrency: xlm
-                    validUntil: '2019-09-09T14:02:52.326Z'
-        '400':
+                    validUntil: "2019-09-09T14:02:52.326Z"
+        "400":
           description: Bad request (amount greater than the maximum)
           headers:
             Access-Control-Allow-Headers:
@@ -57546,7 +57546,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -57558,7 +57558,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '104'
+                example: "104"
             Date:
               schema:
                 type: string
@@ -57729,13 +57729,13 @@ paths:
                           example: email@email.com
                         phone_number:
                           type: string
-                          example: '+3723800037'
+                          example: "+3723800037"
                 deposit_type:
                   type: string
                   example: SEPA_1
                 external_partner_link_id:
                   type: string
-                  example: ''
+                  example: ""
                 from_amount:
                   type: number
                   example: 1200.24
@@ -57750,7 +57750,7 @@ paths:
                   example: mtXWDB6k5yC5v7TcwKZHB89SUp85yCKshy
                 payout_extra_id:
                   type: string
-                  example: '1'
+                  example: "1"
                 payout_type:
                   type: string
                   example: SEPA_1
@@ -57766,14 +57766,14 @@ paths:
                   customer:
                     contact_info:
                       email: email@email.com
-                      phone_number: '+3723800037'
+                      phone_number: "+3723800037"
                   deposit_type: SEPA_1
-                  external_partner_link_id: ''
+                  external_partner_link_id: ""
                   from_amount: 1200.24
                   from_currency: EUR
                   from_network: null
                   payout_address: mtXWDB6k5yC5v7TcwKZHB89SUp85yCKshy
-                  payout_extra_id: '1'
+                  payout_extra_id: "1"
                   payout_type: SEPA_1
                   to_currency: BTC
                   to_network: BNB
@@ -57786,21 +57786,21 @@ paths:
                     Direction of exchange flow [ SEPA_1, VISA_MC1, VISA_MC2,
                     LUQAPAY, CRYPTO_THROUGH_CN ]
                   type: string
-                  example: ' SEPA_1'
+                  example: " SEPA_1"
                 from_amount:
                   description: (Required if type is direct) Must be greater then 0.
                   type: string
-                  example: ' 1200.24'
+                  example: " 1200.24"
                 from_currency:
                   description: |-
                     (Required) Ticker of the currency you want to exchange. 
                     It is optional when using rateId field.
                   type: string
-                  example: ' EUR'
+                  example: " EUR"
                 from_network:
                   description: (Optional) Network of the currency you want to exchange
                   type: string
-                  example: ' null'
+                  example: " null"
                 payout_address:
                   description: (Required) Address to receive a currency
                   type: string
@@ -57808,25 +57808,25 @@ paths:
                 payout_extra_id:
                   description: (Optional) Refund Extra ID
                   type: string
-                  example: ' 1'
+                  example: " 1"
                 payout_type:
                   description: >-
                     Direction of exchange flow [ SEPA_1, VISA_MC1, VISA_MC2,
                     LUQAPAY, CRYPTO_THROUGH_CN ]
                   type: string
-                  example: ' SEPA_1'
+                  example: " SEPA_1"
                 to_currency:
                   description: |-
                     (Required) Ticker of the currency you want to receive.
                     It is optional when using rateId field
                   type: string
-                  example: ' BTC'
+                  example: " BTC"
                 to_network:
                   description: (Optional) Network of the currency you want to receive
                   type: string
-                  example: ' null'
+                  example: " null"
       responses:
-        '200':
+        "200":
           description: Successfull response
           headers:
             Access-Control-Allow-Headers:
@@ -57841,7 +57841,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -57916,7 +57916,7 @@ paths:
                 properties:
                   created_at:
                     type: string
-                    example: '2021-07-14T10:36:40.273Z'
+                    example: "2021-07-14T10:36:40.273Z"
                   deposit_type:
                     type: string
                     example: SEPA_1
@@ -57935,13 +57935,13 @@ paths:
                         properties:
                           amount:
                             type: string
-                            example: '1197.75'
+                            example: "1197.75"
                           currency:
                             type: string
                             example: EUR
                       estimatedExchangeRate:
                         type: string
-                        example: '19.57475300'
+                        example: "19.57475300"
                       fromAmount:
                         type: number
                         example: 1200.24
@@ -57950,7 +57950,7 @@ paths:
                         properties:
                           amount:
                             type: string
-                            example: '0.1'
+                            example: "0.1"
                           currency:
                             type: string
                             example: TRX
@@ -57961,7 +57961,7 @@ paths:
                           properties:
                             amount:
                               type: string
-                              example: '2.49'
+                              example: "2.49"
                             currency:
                               type: string
                               example: EUR
@@ -57969,24 +57969,24 @@ paths:
                               type: string
                               example: Service fee
                         example:
-                          - amount: '2.49'
+                          - amount: "2.49"
                             currency: EUR
                             name: Service fee
                       toAmount:
                         type: string
-                        example: '23445.66041'
+                        example: "23445.66041"
                   expected_from_amount:
                     type: string
-                    example: '1200.24'
+                    example: "1200.24"
                   expected_to_amount:
                     type: string
-                    example: '23445.66041'
+                    example: "23445.66041"
                   external_partner_link_id:
                     nullable: true
                     example: null
                   from_amount:
                     type: string
-                    example: '0'
+                    example: "0"
                   from_currency:
                     type: string
                     example: EUR
@@ -57998,7 +57998,7 @@ paths:
                     example: null
                   id:
                     type: string
-                    example: '4496229738'
+                    example: "4496229738"
                   location:
                     type: string
                     example: DE
@@ -58007,16 +58007,16 @@ paths:
                     example: null
                   partner_id:
                     type: string
-                    example: '6437862205'
+                    example: "6437862205"
                   payout:
                     type: object
                     properties:
                       address:
                         type: string
-                        example: '0x7cC3BD073c6d9564bb67ffCb86f76D36e48ce3F1'
+                        example: "0x7cC3BD073c6d9564bb67ffCb86f76D36e48ce3F1"
                       extra_id:
                         type: string
-                        example: '1'
+                        example: "1"
                   payout_type:
                     type: string
                     example: CRYPTO_THROUGH_CN
@@ -58043,42 +58043,42 @@ paths:
                     example: null
                   updated_at:
                     type: string
-                    example: '2021-07-14T10:36:40.273Z'
+                    example: "2021-07-14T10:36:40.273Z"
               examples:
                 Successfull response:
                   value:
-                    created_at: '2021-07-14T10:36:40.273Z'
+                    created_at: "2021-07-14T10:36:40.273Z"
                     deposit_type: SEPA_1
                     email: null
                     errors: []
                     estimate_breakdown:
                       convertedAmount:
-                        amount: '1197.75'
+                        amount: "1197.75"
                         currency: EUR
-                      estimatedExchangeRate: '19.57475300'
+                      estimatedExchangeRate: "19.57475300"
                       fromAmount: 1200.24
                       networkFee:
-                        amount: '0.1'
+                        amount: "0.1"
                         currency: TRX
                       serviceFees:
-                        - amount: '2.49'
+                        - amount: "2.49"
                           currency: EUR
                           name: Service fee
-                      toAmount: '23445.66041'
-                    expected_from_amount: '1200.24'
-                    expected_to_amount: '23445.66041'
+                      toAmount: "23445.66041"
+                    expected_from_amount: "1200.24"
+                    expected_to_amount: "23445.66041"
                     external_partner_link_id: null
-                    from_amount: '0'
+                    from_amount: "0"
                     from_currency: EUR
                     from_currency_with_network: null
                     from_network: null
-                    id: '4496229738'
+                    id: "4496229738"
                     location: DE
                     output_hash: null
-                    partner_id: '6437862205'
+                    partner_id: "6437862205"
                     payout:
-                      address: '0x7cC3BD073c6d9564bb67ffCb86f76D36e48ce3F1'
-                      extra_id: '1'
+                      address: "0x7cC3BD073c6d9564bb67ffCb86f76D36e48ce3F1"
+                      extra_id: "1"
                     payout_type: CRYPTO_THROUGH_CN
                     redirect_url: https://payments.guardarian.com/checkout?tid=4496229738
                     status: new
@@ -58087,8 +58087,8 @@ paths:
                     to_currency: TRX
                     to_currency_with_network: null
                     to_network: null
-                    updated_at: '2021-07-14T10:36:40.273Z'
-        '400':
+                    updated_at: "2021-07-14T10:36:40.273Z"
+        "400":
           description: Bad request error
           content:
             application/json:
@@ -58110,7 +58110,7 @@ paths:
                     code: BAD_REQUEST
                     message: Bad request error
                     statusCode: 400
-        '401':
+        "401":
           description: Invalid token
           content:
             application/json:
@@ -58132,7 +58132,7 @@ paths:
                     code: INVALID_TOKEN
                     message: Invalid token
                     statusCode: 401
-        '403':
+        "403":
           description: Forbidden request error
           content:
             application/json:
@@ -58154,7 +58154,7 @@ paths:
                     code: FORBIDDEN
                     message: Forbidden request error
                     statusCode: 403
-        '404':
+        "404":
           description: Not found
           content:
             application/json:
@@ -58176,7 +58176,7 @@ paths:
                     code: NOT_FOUND
                     message: Not found
                     statusCode: 404
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58220,7 +58220,7 @@ paths:
             type: string
             example: your_api_key
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -58234,7 +58234,7 @@ paths:
                 Successful operation:
                   value:
                     message: OK
-        '401':
+        "401":
           description: Invalid token
           content:
             application/json:
@@ -58256,7 +58256,7 @@ paths:
                     code: INVALID_TOKEN
                     message: Invalid token
                     statusCode: 401
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58311,43 +58311,43 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Required) Currency to change
         - name: from_network
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Network to change
         - name: from_amount
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Required) Amount to change
         - name: to_currency
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Required) Currency to get
         - name: to_network
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Network to get
         - name: deposit_type
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Deposit type
         - name: payout_type
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Payout type
         - name: x-api-key
           in: header
@@ -58355,7 +58355,7 @@ paths:
             type: string
             example: your_api_key
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -58369,7 +58369,7 @@ paths:
                 Successful operation:
                   value:
                     message: OK
-        '400':
+        "400":
           description: Bad request error
           content:
             application/json:
@@ -58391,7 +58391,7 @@ paths:
                     code: BAD_REQUEST
                     message: Bad request error
                     statusCode: 400
-        '401':
+        "401":
           description: Invalid token
           content:
             application/json:
@@ -58413,7 +58413,7 @@ paths:
                     code: INVALID_TOKEN
                     message: Invalid token
                     statusCode: 401
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58444,7 +58444,7 @@ paths:
       description: This is a method for getting min and max range.
       operationId: marketinfo
       responses:
-        '200':
+        "200":
           description: Successful operation
           headers:
             CF-Cache-Status:
@@ -58519,7 +58519,7 @@ paths:
             x-dns-prefetch-control:
               schema:
                 type: string
-                example: 'off'
+                example: "off"
             x-download-options:
               schema:
                 type: string
@@ -58542,10 +58542,10 @@ paths:
                     example: EUR
                   max:
                     type: string
-                    example: '25000'
+                    example: "25000"
                   min:
                     type: string
-                    example: '16.5'
+                    example: "16.5"
                   to:
                     type: string
                     example: USDT
@@ -58553,10 +58553,10 @@ paths:
                 Successful operation:
                   value:
                     from: EUR
-                    max: '25000'
-                    min: '16.5'
+                    max: "25000"
+                    min: "16.5"
                     to: USDT
-        '400':
+        "400":
           description: Bad request error
           content:
             application/json:
@@ -58578,7 +58578,7 @@ paths:
                     code: BAD_REQUEST
                     message: Bad request error
                     statusCode: 400
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58611,7 +58611,7 @@ paths:
         exchange service
       operationId: fiatHelthcheckService
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -58625,7 +58625,7 @@ paths:
                 Successful operation:
                   value:
                     message: OK
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58658,7 +58658,7 @@ paths:
         that can be used to buy cryptocurrencies.
       operationId: fiatCurrencies
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -58807,7 +58807,7 @@ paths:
                           type: SEPA_1
                           withdrawal_enabled: true
                       ticker: EUR
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -58840,7 +58840,7 @@ paths:
         that a customer can buy using fiat currencies.
       operationId: cryptoCurrencies
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -58989,7 +58989,7 @@ paths:
                           type: SEPA_1
                           withdrawal_enabled: true
                       ticker: EUR
-        '500':
+        "500":
           description: Internal error
           content:
             application/json:
@@ -59073,11 +59073,11 @@ paths:
             type: string
             example: 104305fa95353d
           description: (Required) Transaction ID from Create transaction request
-        - name: ''
+        - name: ""
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
         - name: x-changenow-api-key
           in: header
           schema:
@@ -59085,7 +59085,7 @@ paths:
             example: your_api_key
           description: (Required) Your API key
       responses:
-        '200':
+        "200":
           description: 200 | Get actions
           headers:
             Access-Control-Allow-Headers:
@@ -59100,7 +59100,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -59116,7 +59116,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '9'
+                example: "9"
             Date:
               schema:
                 type: string
@@ -59177,7 +59177,7 @@ paths:
                         example: true
                       currentEstimate:
                         type: string
-                        example: '0.0277754'
+                        example: "0.0277754"
                   error:
                     nullable: true
                     example: null
@@ -59188,9 +59188,9 @@ paths:
                         type: array
                         items:
                           type: string
-                          example: '0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56'
+                          example: "0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56"
                         example:
-                          - '0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56'
+                          - "0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56"
                       address:
                         type: object
                         properties:
@@ -59202,7 +59202,7 @@ paths:
                             example: null
                       amount:
                         type: string
-                        example: '0.00012294'
+                        example: "0.00012294"
                       available:
                         type: boolean
                         example: true
@@ -59211,17 +59211,17 @@ paths:
                   value:
                     continue:
                       available: true
-                      currentEstimate: '0.0277754'
+                      currentEstimate: "0.0277754"
                     error: null
                     refund:
                       additionalAddressList:
-                        - '0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56'
+                        - "0x40FBAC48435dE25FFFC1FCeFA5A5a054FC9b7E56"
                       address:
                         address: 33ybgTeATi1DMoWic8X7wqjZvAuw6fQEuL
                         extraId: null
-                      amount: '0.00012294'
+                      amount: "0.00012294"
                       available: true
-        '400':
+        "400":
           description: 404 | Non-existing exchange id
           content:
             application/json:
@@ -59310,7 +59310,7 @@ paths:
                 value:
                   id: 7ba4327eb4fdfd
       responses:
-        '200':
+        "200":
           description: 200 | Continue exchange
           headers:
             Access-Control-Allow-Headers:
@@ -59325,7 +59325,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -59341,7 +59341,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '9'
+                example: "9"
             Date:
               schema:
                 type: string
@@ -59425,7 +59425,7 @@ paths:
                           currency: trx
                           network: trx
                       result: true
-        '400':
+        "400":
           description: 400 | Push unavailable
           headers:
             CF-RAY:
@@ -59482,7 +59482,7 @@ paths:
                   value:
                     error: not_available
                     message: Continue not available for exchange 7ba4327eb4fdfd
-        '404':
+        "404":
           description: 404 | Exchange not found
           headers:
             Access-Control-Allow-Headers:
@@ -59497,7 +59497,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -59645,7 +59645,7 @@ paths:
                   address: THy6JTNy1aBgY52wKFCvAM4YXRxgzFwCaK
                   id: 7ba4327eb4fdfd
       responses:
-        '200':
+        "200":
           description: 200 | Refund
           headers:
             Access-Control-Allow-Headers:
@@ -59660,7 +59660,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -59676,7 +59676,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '9'
+                example: "9"
             Date:
               schema:
                 type: string
@@ -59736,7 +59736,7 @@ paths:
                 200 | Refund:
                   value:
                     result: true
-        '400':
+        "400":
           description: >-
             400 | Refund unavailable / 400 | Refund address doesn't match
             address from the exchange
@@ -59753,7 +59753,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -59769,7 +59769,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '98'
+                example: "98"
             Date:
               schema:
                 type: string
@@ -59837,7 +59837,7 @@ paths:
                   value:
                     error: not_available
                     message: Refund not available for exchange 7ba4327eb4fdfd
-        '404':
+        "404":
           description: 404 | Exchange not found
           headers:
             Access-Control-Allow-Headers:
@@ -59852,7 +59852,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -60026,7 +60026,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Optional) Set true to return only active currencies
         - name: flow
           in: query
@@ -60040,7 +60040,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) If this field is true, only currencies available for buy
             are returned.
@@ -60048,7 +60048,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) If this field is true, only currencies available for sell
             are returned.
@@ -60059,7 +60059,7 @@ paths:
             example: your-api-key
           description: (Required for fixed-rate) Partner's api key
       responses:
-        '200':
+        "200":
           description: Successfull response
           headers:
             Access-Control-Allow-Headers:
@@ -60074,7 +60074,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -60297,7 +60297,7 @@ paths:
             example: your_api_key
           description: (Required) Partner's api key
       responses:
-        '200':
+        "200":
           description: Successfull response
           headers:
             Access-Control-Allow-Headers:
@@ -60312,7 +60312,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -60448,31 +60448,31 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Ticker of the currency you want to exchange
         - name: toCurrency
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Ticker of the currency you want to receive
         - name: fromNetwork
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Network of the currency you want to exchange
         - name: toNetwork
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: Network of the currency you want to receive
         - name: flow
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: 'Type of exchange flow. Enum: ["standard", "fixed-rate"]'
         - name: x-api-key
           in: header
@@ -60480,7 +60480,7 @@ paths:
             type: string
             example: your_api_key
       responses:
-        '200':
+        "200":
           description: Successful response
           headers:
             Access-Control-Allow-Headers:
@@ -60494,7 +60494,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -116689,7 +116689,7 @@ paths:
                       fromNetwork: one
                       toCurrency: bnb
                       toNetwork: eth
-        '400':
+        "400":
           description: Bad Request
           headers:
             Access-Control-Allow-Headers:
@@ -116703,7 +116703,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -116770,7 +116770,7 @@ paths:
                   value:
                     error: not_valid_params
                     message: toCurrency is required
-        '401':
+        "401":
           description: Unauthorized
           headers:
             Access-Control-Allow-Headers:
@@ -116784,7 +116784,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -116851,7 +116851,7 @@ paths:
                   value:
                     code: string
                     error: string
-        '403':
+        "403":
           description: Forbidden
           headers:
             Access-Control-Allow-Headers:
@@ -116865,7 +116865,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -116932,7 +116932,7 @@ paths:
                   value:
                     code: string
                     error: string
-        '500':
+        "500":
           description: Internal Server Error
           headers:
             Access-Control-Allow-Headers:
@@ -116946,7 +116946,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-RAY:
               schema:
                 type: string
@@ -117115,7 +117115,7 @@ paths:
             example: your_api_key
           description: (Required) Partner's api key
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json:
@@ -117153,7 +117153,7 @@ paths:
                     minAmount: 0.0002625
                     toCurrency: usdt
                     toNetwork: eth
-        '400':
+        "400":
           description: Bad request (Not valid params)
           content:
             application/json:
@@ -117302,13 +117302,13 @@ paths:
           in: query
           schema:
             type: string
-            example: '0.1'
+            example: "0.1"
           description: (Required if type is direct) Must be greater then 0.
         - name: toAmount
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Required if type is reverse) Must be greater then 0.
         - name: fromNetwork
           in: query
@@ -117334,7 +117334,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Direction of exchange flow. Enum: ["direct", "reverse"].
             Default value is direct
@@ -117342,7 +117342,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Use rateId for fixed-rate flow. If this field is true,
             you could use returned field "rateId" in next method for creating
@@ -117353,7 +117353,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Use this flag if you would like to get an estimate for
             the balance import (without withdrawal fee)
@@ -117364,7 +117364,7 @@ paths:
             example: your-api-key
           description: (Required) Partner's api key
       responses:
-        '200':
+        "200":
           description: >-
             Successfull response with rateId for fixed-rate / Successfull
             response
@@ -117381,7 +117381,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -117495,7 +117495,7 @@ paths:
                   validUntil:
                     type: string
                     nullable: true
-                    example: '2023-11-07T09:21:27.448Z'
+                    example: "2023-11-07T09:21:27.448Z"
                   warningMessage:
                     nullable: true
                     example: null
@@ -117534,7 +117534,7 @@ paths:
                     transactionSpeedForecast: null
                     type: direct
                     userId: null
-                    validUntil: '2023-11-07T09:21:27.448Z'
+                    validUntil: "2023-11-07T09:21:27.448Z"
                     warningMessage: null
                     withdrawalFee: 3.20195179
   /v2/exchange:
@@ -117713,13 +117713,13 @@ paths:
               properties:
                 address:
                   type: string
-                  example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                  example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                 flow:
                   type: string
                   example: fixed-rate
                 fromAmount:
                   type: string
-                  example: '0.01'
+                  example: "0.01"
                 fromCurrency:
                   type: string
                   example: btc
@@ -117738,16 +117738,16 @@ paths:
             examples:
               Create exchange transaction:
                 value:
-                  address: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                  address: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   flow: fixed-rate
-                  fromAmount: '0.01'
+                  fromAmount: "0.01"
                   fromCurrency: btc
                   fromNetwork: btc
                   rateId: puLHO5Y2EPg05QkN11OnbRxCA3wCGtBr
                   toCurrency: eth
                   toNetwork: eth
       responses:
-        '200':
+        "200":
           description: Successfull response (standard) / Successfull response (fixed-rate)
           headers:
             Access-Control-Allow-Headers:
@@ -117762,7 +117762,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -117855,7 +117855,7 @@ paths:
                     example: 3M7QKsJDKbVZAhFPpFSVtVQv6Nzon3Lwtv
                   payoutAddress:
                     type: string
-                    example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                   refundAddress:
                     type: string
                     example: 135Hej8p1xSKoChWu5x6LSbNn5opgpojGn
@@ -117873,7 +117873,7 @@ paths:
                     example: direct
                   validUntil:
                     type: string
-                    example: '2023-11-07T10:09:46.517Z'
+                    example: "2023-11-07T10:09:46.517Z"
               examples:
                 Successfull response (fixed-rate):
                   value:
@@ -117883,13 +117883,13 @@ paths:
                     fromNetwork: btc
                     id: af2fa90dab60d8
                     payinAddress: 3CRNkN3kjHfxs7AAojPmGQo614f7XHmgWT
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                     refundAddress: 135Hej8p1xSKoChWu5x6LSbNn5opgpojGn
                     toAmount: 1.82349294
                     toCurrency: eth
                     toNetwork: eth
                     type: direct
-                    validUntil: '2023-11-07T10:09:46.517Z'
+                    validUntil: "2023-11-07T10:09:46.517Z"
                 Successfull response (standard):
                   value:
                     flow: standard
@@ -117898,7 +117898,7 @@ paths:
                     fromNetwork: btc
                     id: 3a2360771439a3
                     payinAddress: 3M7QKsJDKbVZAhFPpFSVtVQv6Nzon3Lwtv
-                    payoutAddress: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+                    payoutAddress: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
                     refundAddress: 135Hej8p1xSKoChWu5x6LSbNn5opgpojGn
                     toAmount: 0.052286
                     toCurrency: eth
@@ -118129,7 +118129,7 @@ paths:
             example: your_api_key
           description: (Required) Partner's api key
       responses:
-        '200':
+        "200":
           description: Successfull response
           content:
             application/json:
@@ -118147,10 +118147,10 @@ paths:
                     example: 7.41109355
                   createdAt:
                     type: string
-                    example: '2024-06-11T12:49:07.139Z'
+                    example: "2024-06-11T12:49:07.139Z"
                   depositReceivedAt:
                     type: string
-                    example: '2024-06-11T12:50:47.122Z'
+                    example: "2024-06-11T12:50:47.122Z"
                   expectedAmountFrom:
                     nullable: true
                     example: null
@@ -118174,7 +118174,7 @@ paths:
                     example: null
                   payinAddress:
                     type: string
-                    example: '0x2915767890A6FbF031DCe70E1b80D987Dc3a2922'
+                    example: "0x2915767890A6FbF031DCe70E1b80D987Dc3a2922"
                   payinExtraId:
                     nullable: true
                     example: null
@@ -118184,7 +118184,7 @@ paths:
                       0x6703a443898b26f4f7d10e5b05a68848a3b0fb598c54c50a5f23e0807dfc5cea
                   payoutAddress:
                     type: string
-                    example: '0x07e35e2fe54d341d526701bdbda7b632f620942d'
+                    example: "0x07e35e2fe54d341d526701bdbda7b632f620942d"
                   payoutExtraId:
                     nullable: true
                     example: null
@@ -118217,7 +118217,7 @@ paths:
                           example: null
                         createdAt:
                           type: string
-                          example: '2024-06-11T12:53:57.457'
+                          example: "2024-06-11T12:53:57.457"
                         fromCurrency:
                           type: string
                           example: usdt
@@ -118233,7 +118233,7 @@ paths:
                     example:
                       - amountFrom: 9
                         amountTo: null
-                        createdAt: '2024-06-11T12:53:57.457'
+                        createdAt: "2024-06-11T12:53:57.457"
                         fromCurrency: usdt
                         fromNetwork: bsc
                         id: 2c0167b2979936
@@ -118251,7 +118251,7 @@ paths:
                           example: null
                         createdAt:
                           type: string
-                          example: '2024-06-11T12:51:13.382'
+                          example: "2024-06-11T12:51:13.382"
                         id:
                           type: string
                           example: cb11103dd7e6e9
@@ -118261,7 +118261,7 @@ paths:
                     example:
                       - amountFrom: 0.013
                         amountTo: null
-                        createdAt: '2024-06-11T12:51:13.382'
+                        createdAt: "2024-06-11T12:51:13.382"
                         id: cb11103dd7e6e9
                         status: failed
                   status:
@@ -118278,7 +118278,7 @@ paths:
                     example: bsc
                   updatedAt:
                     type: string
-                    example: '2024-06-11T12:52:15.759Z'
+                    example: "2024-06-11T12:52:15.759Z"
                   userId:
                     nullable: true
                     example: null
@@ -118291,8 +118291,8 @@ paths:
                     actionsAvailable: false
                     amountFrom: 0.013
                     amountTo: 7.41109355
-                    createdAt: '2024-06-11T12:49:07.139Z'
-                    depositReceivedAt: '2024-06-11T12:50:47.122Z'
+                    createdAt: "2024-06-11T12:49:07.139Z"
+                    depositReceivedAt: "2024-06-11T12:50:47.122Z"
                     expectedAmountFrom: null
                     expectedAmountTo: 7.4050889
                     fromCurrency: bnb
@@ -118300,11 +118300,11 @@ paths:
                     fromNetwork: bsc
                     id: 81cc9c3a9157a6
                     originalExchangeInfo: null
-                    payinAddress: '0x2915767890A6FbF031DCe70E1b80D987Dc3a2922'
+                    payinAddress: "0x2915767890A6FbF031DCe70E1b80D987Dc3a2922"
                     payinExtraId: null
                     payinHash: >-
                       0x6703a443898b26f4f7d10e5b05a68848a3b0fb598c54c50a5f23e0807dfc5cea
-                    payoutAddress: '0x07e35e2fe54d341d526701bdbda7b632f620942d'
+                    payoutAddress: "0x07e35e2fe54d341d526701bdbda7b632f620942d"
                     payoutExtraId: null
                     payoutHash: >-
                       0xd3382cafd44dd6644336eb8290b400adffa42b4486e93f1bed1f845eceb56e60
@@ -118315,7 +118315,7 @@ paths:
                     relatedExchangesInfo:
                       - amountFrom: 9
                         amountTo: null
-                        createdAt: '2024-06-11T12:53:57.457'
+                        createdAt: "2024-06-11T12:53:57.457"
                         fromCurrency: usdt
                         fromNetwork: bsc
                         id: 2c0167b2979936
@@ -118323,17 +118323,17 @@ paths:
                     repeatedExchangesInfo:
                       - amountFrom: 0.013
                         amountTo: null
-                        createdAt: '2024-06-11T12:51:13.382'
+                        createdAt: "2024-06-11T12:51:13.382"
                         id: cb11103dd7e6e9
                         status: failed
                     status: finished
                     toCurrency: usdt
                     toLegacyTicker: usdtbsc
                     toNetwork: bsc
-                    updatedAt: '2024-06-11T12:52:15.759Z'
+                    updatedAt: "2024-06-11T12:52:15.759Z"
                     userId: null
                     validUntil: null
-        '401':
+        "401":
           description: Bad Request (Unauthorized)
           headers:
             Access-Control-Allow-Headers:
@@ -118348,7 +118348,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -118364,7 +118364,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '12'
+                example: "12"
             Date:
               schema:
                 type: string
@@ -118413,7 +118413,7 @@ paths:
               examples:
                 Bad Request (Unauthorized):
                   value: Unauthorized
-        '403':
+        "403":
           description: Bad request (Forbidden)
           headers:
             Access-Control-Allow-Headers:
@@ -118428,7 +118428,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -118560,10 +118560,10 @@ paths:
           in: query
           schema:
             type: string
-            example: '0x57f31ad4b64095347F87eDB1675566DAfF5EC886'
+            example: "0x57f31ad4b64095347F87eDB1675566DAfF5EC886"
           description: (Required) Address for validation
       responses:
-        '200':
+        "200":
           description: Successfull response / Invalid address
           headers:
             Access-Control-Allow-Headers:
@@ -118577,7 +118577,7 @@ paths:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             CF-Cache-Status:
               schema:
                 type: string
@@ -118593,7 +118593,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '45'
+                example: "45"
             Date:
               schema:
                 type: string
@@ -118669,19 +118669,19 @@ paths:
           description: >-
             (Required) FIO address or Unstoppable domain as name.zil /
             name.crypto
-        - name: ''
+        - name: ""
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
       responses:
-        '200':
+        "200":
           description: Successfull response / Not existed address
           headers:
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+                example: "*"
             Connection:
               schema:
                 type: string
@@ -118689,7 +118689,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '1851'
+                example: "1851"
             Date:
               schema:
                 type: string
@@ -118726,23 +118726,23 @@ paths:
                         chain: fio
                         currency: fio
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: eth
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: usdc
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: bat
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: link
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: usdt
                         protocol: fio
@@ -118814,23 +118814,23 @@ paths:
                         chain: fio
                         currency: fio
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: eth
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: usdc
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: bat
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: link
                         protocol: fio
-                      - address: '0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce'
+                      - address: "0x9021e9675b29abe5d5b1fb91b3d263a0ea0149ce"
                         chain: eth
                         currency: usdt
                         protocol: fio
@@ -119019,7 +119019,7 @@ paths:
           in: query
           schema:
             type: string
-            example: '100'
+            example: "100"
           description: (Required if type is direct) Must be greater then 0.
         - name: convertedCurrency
           in: query
@@ -119042,8 +119042,8 @@ paths:
             Kindly contact your account manager if you're getting an
             Unauthorized error.
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
       security:
         - {}
   /v2/markets/estimate:
@@ -119123,13 +119123,13 @@ paths:
           in: query
           schema:
             type: string
-            example: '1000'
+            example: "1000"
           description: (Optional)  Set if this is a direct type of the estimated amount
         - name: toAmount
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Optional) Set if this is a reverse type of the estimated amount
         - name: type
           in: query
@@ -119146,7 +119146,7 @@ paths:
             example: your_api_key
           description: Partner's api key
       responses:
-        '200':
+        "200":
           description: Succesfull response (reverse) / Successfull response (direct)
           headers:
             CF-Cache-Status:
@@ -119234,7 +119234,7 @@ paths:
                     toAmount: 0.09527438736782325
                     toCurrency: btc
                     type: direct
-        '400':
+        "400":
           description: Bad request / Bad request 2
           headers:
             CF-Cache-Status:
@@ -119252,7 +119252,7 @@ paths:
             Content-Length:
               schema:
                 type: string
-                example: '75'
+                example: "75"
             Date:
               schema:
                 type: string
@@ -119496,7 +119496,7 @@ paths:
           in: query
           schema:
             type: string
-            example: '10'
+            example: "10"
           description: |-
             (Optional) Limit of transactions to return (default: 100)
 
@@ -119505,7 +119505,7 @@ paths:
           in: query
           schema:
             type: string
-            example: '0'
+            example: "0"
           description: |-
             (Optional) Number of transactions to skip (default: 0)
 
@@ -119514,25 +119514,25 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: '(Optional) Sort ascending or descending. Enum: ["ASC",  "DESC"]'
         - name: sortField
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: '(Optional) Sort by selected field. Enum: ["createdAt", "updatedAt"]'
         - name: dateField
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: '(Optional) Sort by date. Enum: ["createdAt", "updatedAt"]'
         - name: dateFrom
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Set a date to filter transactions created after this
             specified date.
@@ -119543,7 +119543,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             (Optional) Set a date to filter transactions created before this
             specified date.
@@ -119554,25 +119554,25 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Optional) Transaction ID.
         - name: userId
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Optional) Sort by userId
         - name: payoutAddress
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: (Optional) Sort by payoutAddress
         - name: statuses
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
         - name: x-changenow-api-key
           in: header
           schema:
@@ -119584,10 +119584,10 @@ paths:
           text/plain:
             examples:
               Exchanges:
-                value: ''
+                value: ""
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
       security:
         - {}
 components:

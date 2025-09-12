@@ -13,13 +13,13 @@ npm i changenow-io-sdk
 ### Initial
 
 ```js
-import { createChangeNowSDK } from 'changenow-io-sdk'
+import { createChangeNowSDK } from "changenow-io-sdk";
 
-const changeNowSDK = createChangeNowSDK('[API_KEY]')
+const changeNowSDK = createChangeNowSDK("[API_KEY]");
 ```
 
 ### Execute
 
 ```js
-changeNowSDK.v2.listOfAvailableCurrencies1() // or another methods
+changeNowSDK.v2.listOfAvailableCurrencies1(); // or another methods
 ```

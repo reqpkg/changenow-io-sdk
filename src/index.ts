@@ -1,4 +1,4 @@
-import { ChangeNowClient } from './client'
+import { ChangeNowClient } from "./client";
 
 /**
  *
@@ -7,12 +7,12 @@ import { ChangeNowClient } from './client'
 export function createChangeNowSDK(changeNowApiKey: string) {
   const changeNowClient = new ChangeNowClient({
     baseApiParams: {
-      format: 'json',
+      format: "json",
       headers: {
-        'X-Changenow-Api-Key': changeNowApiKey,
+        "X-Changenow-Api-Key": changeNowApiKey,
       },
     },
-  })
+  });
 
   return {
     v1: {
@@ -21,5 +21,5 @@ export function createChangeNowSDK(changeNowApiKey: string) {
     v2: {
       ...changeNowClient.v2,
     },
-  }
+  };
 }
